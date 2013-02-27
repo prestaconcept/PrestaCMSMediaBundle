@@ -18,8 +18,8 @@ This bundle adds media blocks to [PrestaCMS][1].
 
 ### 2) Get the bundle
 
-    php composer.phar require presta/cms-core-bundle:dev-master --no-update
-    php composer.phar update presta/cms-core-bundle
+    php composer.phar require presta/presta/cms-media-bundle:dev-master --no-update
+    php composer.phar update presta/presta/cms-media-bundle
 
 ### 3) Update your AppKernel to register the bundle
 
