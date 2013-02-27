@@ -1,4 +1,4 @@
-Presta CMS Media Bundle  [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSMediaBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaCMSMediaBundle)
+Presta CMS Media Bundle  [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSMediaBundle.png)](http://travis-ci.org/prestaconcept/PrestaCMSMediaBundle)
 =============
 
 This bundle adds media blocks to [PrestaCMS][1].
@@ -13,8 +13,8 @@ This bundle adds media blocks to [PrestaCMS][1].
 
 ### 1) Install dependencies
 
-:book: First you need to follow the [PrestaCMS installation steps][1].
-:book: And the [SonataMediaBundle][4]
+- First you need to follow the [ :book: PrestaCMS installation steps][1].
+- And the [:book: SonataMediaBundle][4]
 
 ### 2) Get the bundle
 
