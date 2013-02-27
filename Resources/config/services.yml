@@ -1,0 +1,17 @@
+parameters:
+#    presta_cms_media.example.class: Presta\CMSMediaBundle\Example
+
+services:
+#    presta_cms_media.example:
+#        class: %presta_cms_media.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+    presta_cms.block.media:
+        class: Presta\CMSMediaBundle\Block\MediaBlockService
+        tags:
+            - {name: sonata.block}
+            - {name: presta_cms.block}
+        arguments: [cms_core_editor, @templating,@service_container,@sonata.media.manager.media]
+        calls:
+          - [ setTranslator, [@translator] ]
+          - [ setContainer, [@service_container]]

@@ -1,0 +1,27 @@
+{
+    "name": "presta/cms-media-bundle",
+    "type": "symfony-bundle",
+    "description": "PrestaCMS Media bundle : Add media blocks to PrestaCMS",
+    "keywords": ["symfony2", "bundle", "cms", "symfony-cmf", "prestaconcept", "media"],
+    "homepage": "https://github.com/prestaconcept/PrestaCMSMediaBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Bastien",
+            "email": "nbastien@prestaconcept.net",
+            "homepage": "http://www.prestaconcept.net/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "suggest": {
+        "presta/cms-core-bundle": "dev-master",
+        "sonata-project/media-bundle": "2.1.*@dev"
+    },
+    "autoload": {
+        "psr-0": { "Presta\\CMSMediaBundle": "" }
+    },
+    "target-dir": "Presta/CMSMediaBundle"
+}

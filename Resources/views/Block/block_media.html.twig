@@ -1,0 +1,7 @@
+{% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
+
+{% block block %}
+    {%  if (settings.media) %}
+        {% media settings.media, 'large' %}
+    {% endif %}
+{% endblock %}
