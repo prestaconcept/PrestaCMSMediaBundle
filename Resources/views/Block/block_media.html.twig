@@ -1,7 +1,9 @@
 {% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
 
 {% block block %}
-    {%  if (settings.media) %}
-        {% media settings.media, 'large' %}
+    {% if (settings.media) %}
+    <div class="cms-media-container">
+        {% media settings.media, settings.format %}
+    </div>
     {% endif %}
 {% endblock %}

@@ -1,1 +1,11 @@
 block.title.presta_cms.block.media: Block Media
+
+media.format.prestacms_page_wide: wide
+media.format.prestacms_page_sidebar: sidebar
+media.format.prestacms_page_content: content
+media.format.prestacms_gallery_full: gallery full
+media.format.prestacms_gallery_horizontal_thumb: gallery horizontal thumb
+media.format.prestacms_gallery_vertical_thumb: gallery vertical thumb
+media.format.prestacms_carousel_full: carousel full
+media.format.prestacms_carousel_medium: carousel medium
+media.format.prestacms_carousel_small: carousel small
