@@ -1,4 +1,4 @@
-Presta CMS Media Bundle  [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSMediaBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaCMSMediaBundle)
+Presta CMS Media Bundle  [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSMediaBundle.png)](http://travis-ci.org/prestaconcept/PrestaCMSMediaBundle)
 =============
 
 This bundle adds media blocks to [PrestaCMS][1].
@@ -13,13 +13,13 @@ This bundle adds media blocks to [PrestaCMS][1].
 
 ### 1) Install dependencies
 
-:book: First you need to follow the [PrestaCMS installation steps][1].
-:book: And the [SonataMediaBundle][4]
+- First you need to follow the [ :book: PrestaCMS installation steps][1].
+- And the [:book: SonataMediaBundle][4]
 
 ### 2) Get the bundle
 
-    php composer.phar require presta/cms-core-bundle:dev-master --no-update
-    php composer.phar update presta/cms-core-bundle
+    php composer.phar require presta/presta/cms-media-bundle:dev-master --no-update
+    php composer.phar update presta/presta/cms-media-bundle
 
 ### 3) Update your AppKernel to register the bundle
 
