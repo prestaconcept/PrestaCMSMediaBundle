@@ -9,3 +9,7 @@ media.format.prestacms_gallery_vertical_thumb: gallery vertical thumb
 media.format.prestacms_carousel_full: carousel full
 media.format.prestacms_carousel_medium: carousel medium
 media.format.prestacms_carousel_small: carousel small
+
+gallery.layout.vertical: vertical
+gallery.layout.horizontal: horizontal
+

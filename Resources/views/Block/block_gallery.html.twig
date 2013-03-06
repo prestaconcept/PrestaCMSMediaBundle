@@ -1,0 +1,14 @@
+{% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
+
+{% block block %}
+    {% if (settings.gallery) %}
+        <div class="cms-gallery-container {{ settings.layout }}">
+            {% for galleryHasMedias in settings.gallery.galleryHasMedias %}
+                {% set media = galleryHasMedias.media %}
+                <a class="cms-gallery-media" href="{% path media, 'gallery_full' %}" rel="{{ settings.gallery.name }}">
+                    {% media media, 'gallery_' ~ settings.layout ~ '_thumb'  %}
+                </a>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}

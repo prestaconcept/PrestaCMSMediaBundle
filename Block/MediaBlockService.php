@@ -15,8 +15,6 @@ use Sonata\AdminBundle\Form\FormMapper;
 
 /**
  * Media Block use SonataMediaBundle
- *
- * @author Nicolas Bastien <nbastien@prestaconcept.net>
  */
 class MediaBlockService extends BaseModelBlockService
 {
