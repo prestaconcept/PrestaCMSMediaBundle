@@ -44,7 +44,7 @@ Carousel block allow you to add carousel based on a Sonata gallery. It contains 
 in any kind of container.
 
 Here is an exemple with Creative theme :
-![PrestaCMS Creative Carousel](https://raw.github.com/prestaconcept/PrestaCMSMediaBundle/master/Resources/docs/assets/creative-carousel.jpg)
+![PrestaCMS Creative Carousel](https://raw.github.com/prestaconcept/PrestaCMSMediaBundle/master/Resources/doc/assets/creative-carousel.jpg)
 
 ### Media and Media advanced
 
