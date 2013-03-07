@@ -68,7 +68,7 @@ class GalleryBlockService extends BaseModelBlockService
     {
         return array(
             'gallery' => null,
-            'layout' => self::DEFAULT_FORMAT
+            'format' => self::DEFAULT_FORMAT,
         );
     }
 }
