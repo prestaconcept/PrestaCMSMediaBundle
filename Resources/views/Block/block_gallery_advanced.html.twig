@@ -1,0 +1,13 @@
+{% extends 'PrestaCMSMediaBundle:Block:block_gallery.html.twig' %}
+
+{% block block %}
+    <div class="cms-gallery-advanced-container {{ settings.layout }}">
+        <h2>{{ settings.title }}</h2>
+        {% if (settings.gallery) %}
+            {{ prestacms.render_gallery(settings.gallery, settings.layout) }}
+        {% endif %}
+        <div class="content">
+            {{ settings.content|raw }}
+        </div>
+    </div>
+{% endblock %}

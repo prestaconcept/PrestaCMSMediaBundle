@@ -1,14 +1,19 @@
 {% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
 
+{% macro render_gallery(gallery, layout) %}
+<div class="cms-gallery-container {{ layout }}">
+    {% for galleryHasMedias in gallery.galleryHasMedias %}
+        {% set media = galleryHasMedias.media %}
+        <a class="cms-gallery-media" href="{% path media, 'gallery_full' %}" rel="{{ gallery.name }}">
+            {% media media, 'gallery_' ~ layout ~ '_thumb'  %}
+        </a>
+    {% endfor %}
+</div>
+{% endmacro %}
+{% import _self as prestacms %}
+
 {% block block %}
     {% if (settings.gallery) %}
-        <div class="cms-gallery-container {{ settings.layout }}">
-            {% for galleryHasMedias in settings.gallery.galleryHasMedias %}
-                {% set media = galleryHasMedias.media %}
-                <a class="cms-gallery-media" href="{% path media, 'gallery_full' %}" rel="{{ settings.gallery.name }}">
-                    {% media media, 'gallery_' ~ settings.layout ~ '_thumb'  %}
-                </a>
-            {% endfor %}
-        </div>
+        {{ prestacms.render_gallery(settings.gallery, settings.layout) }}
     {% endif %}
 {% endblock %}

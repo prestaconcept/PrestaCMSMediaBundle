@@ -7,7 +7,16 @@ services:
         tags:
             - {name: sonata.block}
             - {name: presta_cms.block}
-        arguments: [cms_core_editor, @templating,@service_container,@sonata.media.manager.media]
+        arguments: [cms_core_editor, @templating,@service_container, @sonata.media.manager.media]
+        calls:
+            - [ setTranslator, [@translator] ]
+            - [ setContainer, [@service_container]]
+    presta_cms.block.media_advanced:
+        class: Presta\CMSMediaBundle\Block\MediaAdvancedBlockService
+        tags:
+            - {name: sonata.block}
+            - {name: presta_cms.block}
+        arguments: [cms_core_editor, @templating,@service_container, @sonata.media.manager.media]
         calls:
             - [ setTranslator, [@translator] ]
             - [ setContainer, [@service_container]]
@@ -16,7 +25,16 @@ services:
         tags:
             - {name: sonata.block}
             - {name: presta_cms.block}
-        arguments: [cms_core_editor, @templating,@service_container,@sonata.media.manager.media]
+        arguments: [cms_core_editor, @templating,@service_container, @sonata.media.manager.media]
+        calls:
+            - [ setTranslator, [@translator] ]
+            - [ setContainer, [@service_container]]
+    presta_cms.block.gallery_advanced:
+        class: Presta\CMSMediaBundle\Block\GalleryAdvancedBlockService
+        tags:
+            - {name: sonata.block}
+            - {name: presta_cms.block}
+        arguments: [cms_core_editor, @templating,@service_container, @sonata.media.manager.media]
         calls:
             - [ setTranslator, [@translator] ]
             - [ setContainer, [@service_container]]

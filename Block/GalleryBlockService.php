@@ -18,6 +18,8 @@ use Sonata\AdminBundle\Form\FormMapper;
  */
 class GalleryBlockService extends BaseModelBlockService
 {
+    const DEFAULT_FORMAT = 'vertical';
+
     /**
      * @var string
      */
@@ -33,7 +35,12 @@ class GalleryBlockService extends BaseModelBlockService
         );
     }
 
-    protected function getLayouts()
+    /**
+     * Returns possible gallery formats
+     *
+     * @return array
+     */
+    protected function getFormats()
     {
         return array(
             'vertical'   => $this->trans('gallery.layout.vertical'),
@@ -48,9 +55,9 @@ class GalleryBlockService extends BaseModelBlockService
     {
         return array_merge(
             array(
-                array('layout', 'choice', array('required' => true, 'choices' => $this->getLayouts()))
-            )
-          ,  parent::getFormSettings($formMapper, $block)
+                array('format', 'choice', array('required' => true, 'choices' => $this->getFormats()))
+            ),
+            parent::getFormSettings($formMapper, $block)
         );
     }
 
@@ -61,7 +68,7 @@ class GalleryBlockService extends BaseModelBlockService
     {
         return array(
             'gallery' => null,
-            'layout' => 'vertical'
+            'layout' => self::DEFAULT_FORMAT
         );
     }
 }
