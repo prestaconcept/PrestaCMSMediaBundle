@@ -1,0 +1,30 @@
+{% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
+
+{% block block %}
+    {% set carouselId = 'cms-carousel-' ~ block.htmlId %}
+    {% set gallery = settings.gallery %}
+    {% set format = 'full'  %}
+
+    {% if (settings.gallery) %}
+        <div id="{{ carouselId }}" class="carousel slide">
+            <ol class="carousel-indicators">
+                {% for galleryHasMedias in gallery.galleryHasMedias %}
+                    <li data-target="#{{ carouselId }}" data-slide-to="{{ loop.index0 }}" class="{% if(loop.first) %}active{% endif %}"></li>
+                {% endfor %}
+            </ol>
+            <div class="carousel-inner">
+            {% for galleryHasMedias in gallery.galleryHasMedias %}
+                {% set media = galleryHasMedias.media %}
+                <div class="{% if(loop.first) %}active{% endif %} item">
+                    {% media media, 'carousel_' ~ format %}
+                        <div class="carousel-caption">
+                            {{ media.description|raw }}
+                        </div>
+                </div>
+            {% endfor %}
+            </div>
+            <a class="carousel-control left" href="#{{ carouselId }}" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#{{ carouselId }}" data-slide="next">&rsaquo;</a>
+        </div>
+    {% endif %}
+{% endblock %}

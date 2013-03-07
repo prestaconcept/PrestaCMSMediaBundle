@@ -2,7 +2,7 @@ block.title.presta_cms.block.media: Block Media
 block.title.presta_cms.block.media_advanced: Block Media Advanced
 block.title.presta_cms.block.gallery: Block Gallery
 block.title.presta_cms.block.gallery_advanced: Block Gallery Advanced
-
+block.title.presta_cms.block.carousel: Carousel
 
 media.format.prestacms_page_wide: wide
 media.format.prestacms_page_sidebar: sidebar
@@ -21,3 +21,6 @@ media.layout.right: align right
 gallery.layout.vertical: vertical
 gallery.layout.horizontal: horizontal
 
+carousel.format.full: full
+carousel.format.medium: medium
+carousel.format.small: small

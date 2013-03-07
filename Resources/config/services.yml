@@ -2,6 +2,15 @@ parameters:
 #    presta_cms_media.example.class: Presta\CMSMediaBundle\Example
 
 services:
+    presta_cms.block.carousel:
+        class: Presta\CMSMediaBundle\Block\CarouselBlockService
+        tags:
+            - {name: sonata.block}
+            - {name: presta_cms.block}
+        arguments: [cms_core_editor, @templating,@service_container, @sonata.media.manager.media]
+        calls:
+            - [ setTranslator, [@translator] ]
+            - [ setContainer, [@service_container]]
     presta_cms.block.media:
         class: Presta\CMSMediaBundle\Block\MediaBlockService
         tags:
