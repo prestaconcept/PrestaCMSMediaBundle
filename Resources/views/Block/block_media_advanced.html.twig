@@ -1,0 +1,15 @@
+{% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
+
+{% block block %}
+<div class="cms-media-advanced-container {{ settings.layout }}">
+    <h2>{{ settings.title }}</h2>
+    {% if (settings.media) %}
+        <div class="cms-media-container">
+            {% media settings.media, settings.format %}
+        </div>
+    {% endif %}
+    <div class="content">
+        {{ settings.content|raw }}
+    </div>
+</div>
+{% endblock %}

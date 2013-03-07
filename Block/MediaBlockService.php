@@ -18,6 +18,8 @@ use Sonata\AdminBundle\Form\FormMapper;
  */
 class MediaBlockService extends BaseModelBlockService
 {
+    const DEFAULT_MEDIA_FORMAT = 'prestacms_gallery_horizontal_thumb';
+
     /**
      * @var string
      */
@@ -70,11 +72,10 @@ class MediaBlockService extends BaseModelBlockService
         return array_merge(
             array(
                 array('format', 'choice', array('required' => count($formatChoices) > 0, 'choices' => $formatChoices))
-            )
-          ,  parent::getFormSettings($formMapper, $block)
+            ),
+            parent::getFormSettings($formMapper, $block)
         );
     }
-
 
     /**
      * {@inheritdoc}
@@ -82,8 +83,8 @@ class MediaBlockService extends BaseModelBlockService
     public function getDefaultSettings()
     {
         return array(
-            'media' => null,
-            'format' => 'prestacms_gallery_horizontal_thumb'
+            'media'  => null,
+            'format' => self::DEFAULT_MEDIA_FORMAT
         );
     }
 }
