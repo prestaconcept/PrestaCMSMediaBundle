@@ -26,6 +26,11 @@ class CarouselBlockService extends GalleryBlockService
     protected $template = 'PrestaCMSMediaBundle:Block:block_carousel.html.twig';
 
     /**
+     * @var string
+     */
+    protected $preview = 'bundles/prestacmsmedia/admin/img/block/carousel.jpg';
+
+    /**
      * Returns possible formats
      *
      * @return array
