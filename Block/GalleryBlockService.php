@@ -26,6 +26,11 @@ class GalleryBlockService extends BaseModelBlockService
     protected $template = 'PrestaCMSMediaBundle:Block:block_gallery.html.twig';
 
     /**
+     * @var string
+     */
+    protected $preview = 'bundles/prestacmsmedia/admin/img/block/gallery.jpg';
+
+    /**
      * {@inheritdoc}
      */
     protected function getModelFields()
@@ -55,7 +60,7 @@ class GalleryBlockService extends BaseModelBlockService
     {
         return array_merge(
             array(
-                array('format', 'choice', array('required' => true, 'choices' => $this->getFormats()))
+                array('format', 'choice', array('required' => true, 'choices' => $this->getFormats(), 'label' => $this->trans('form.label_format')))
             ),
             parent::getFormSettings($formMapper, $block)
         );

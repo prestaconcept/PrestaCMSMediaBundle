@@ -4,7 +4,7 @@
 <div class="cms-gallery-container {{ layout }}">
     {% for galleryHasMedias in gallery.galleryHasMedias %}
         {% set media = galleryHasMedias.media %}
-        <a class="cms-gallery-media" href="{% path media, 'gallery_full' %}" rel="{{ gallery.name }}">
+        <a class="cms-gallery-media" href="{% path media, 'gallery_full' %}" rel="{{ gallery.name|replace({'-': ''}) }}" title="{{ media.name }}">
             {% media media, 'gallery_' ~ layout ~ '_thumb'  %}
         </a>
     {% endfor %}

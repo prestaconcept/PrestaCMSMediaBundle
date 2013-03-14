@@ -28,6 +28,11 @@ class GalleryAdvancedBlockService extends GalleryBlockService
     protected $template = 'PrestaCMSMediaBundle:Block:block_gallery_advanced.html.twig';
 
     /**
+     * @var string
+     */
+    protected $preview = 'bundles/prestacmsmedia/admin/img/block/gallery_advanced.jpg';
+
+    /**
      * Returns possible block layouts
      *
      * @return array
@@ -50,7 +55,7 @@ class GalleryAdvancedBlockService extends GalleryBlockService
             array(
                 array('title', 'text', array('required' => false, 'label' => $this->trans('form.label_title'))),
                 array('content', 'textarea', array('attr' => array(), 'label' => $this->trans('form.label_content'))),
-                array('layout', 'choice', array('required' => true, 'choices' => $this->getLayouts()))
+                array('layout', 'choice', array('required' => true, 'choices' => $this->getLayouts(), 'label' => $this->trans('form.label_layout')))
             ),
             parent::getFormSettings($formMapper, $block)
         );

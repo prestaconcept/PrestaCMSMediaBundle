@@ -71,7 +71,7 @@ class MediaBlockService extends BaseModelBlockService
 
         return array_merge(
             array(
-                array('format', 'choice', array('required' => count($formatChoices) > 0, 'choices' => $formatChoices))
+                array('format', 'choice', array('required' => count($formatChoices) > 0, 'choices' => $formatChoices, 'label' => $this->trans('form.label_format')))
             ),
             parent::getFormSettings($formMapper, $block)
         );

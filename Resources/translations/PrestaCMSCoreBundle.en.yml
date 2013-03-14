@@ -1,26 +1,39 @@
-block.title.presta_cms.block.media: Block Media
-block.title.presta_cms.block.media_advanced: Block Media Advanced
-block.title.presta_cms.block.gallery: Block Gallery
-block.title.presta_cms.block.gallery_advanced: Block Gallery Advanced
-block.title.presta_cms.block.carousel: Carousel
+block:
+    title:
+        presta_cms.block.media: Block Media
+        presta_cms.block.media_advanced: Block Media Advanced
+        presta_cms.block.gallery: Block Gallery
+        presta_cms.block.gallery_advanced: Block Gallery Advanced
+        presta_cms.block.carousel: Carousel
 
-media.format.prestacms_page_wide: wide
-media.format.prestacms_page_sidebar: sidebar
-media.format.prestacms_page_content: content
-media.format.prestacms_gallery_full: gallery full
-media.format.prestacms_gallery_horizontal_thumb: gallery horizontal thumb
-media.format.prestacms_gallery_vertical_thumb: gallery vertical thumb
-media.format.prestacms_carousel_full: carousel full
-media.format.prestacms_carousel_medium: carousel medium
-media.format.prestacms_carousel_small: carousel small
+media:
+    format:
+        prestacms_page_wide: wide
+        prestacms_page_sidebar: sidebar
+        prestacms_page_content: content
+        prestacms_gallery_full: gallery full
+        prestacms_gallery_horizontal_thumb: gallery horizontal thumb
+        prestacms_gallery_vertical_thumb: gallery vertical thumb
+        prestacms_carousel_full: carousel full
+        prestacms_carousel_medium: carousel medium
+        prestacms_carousel_small: carousel small
 
-media.layout.vertical: vertical
-media.layout.left: align left
-media.layout.right: align right
+    layout:
+        vertical: vertical
+        left: align left
+        right: align right
 
-gallery.layout.vertical: vertical
-gallery.layout.horizontal: horizontal
+gallery:
+    layout:
+        vertical: vertical
+        horizontal: horizontal
 
-carousel.format.full: full
-carousel.format.medium: medium
-carousel.format.small: small
+carousel:
+    format:
+        full: full
+        medium: medium
+        small: small
+
+form:
+    label_format: Format
+    label_gallery: Gallery

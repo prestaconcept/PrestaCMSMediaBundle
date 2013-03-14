@@ -4,7 +4,7 @@
     <div class="cms-gallery-advanced-container {{ settings.layout }}">
         <h2>{{ settings.title }}</h2>
         {% if (settings.gallery) %}
-            {{ prestacms.render_gallery(settings.gallery, settings.layout) }}
+            {{ prestacms.render_gallery(settings.gallery, settings.format) }}
         {% endif %}
         <div class="content">
             {{ settings.content|raw }}
