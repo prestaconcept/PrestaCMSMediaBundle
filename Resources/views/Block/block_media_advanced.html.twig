@@ -1,15 +1,21 @@
 {% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
 
 {% block block %}
-<div class="cms-media-advanced-container {{ settings.layout }}">
-    <h2>{{ settings.title }}</h2>
+<div class="cms-block-media-advanced-container {{ settings.layout }}">
+    {% if (settings.title|length) %}
+        <{{ settings.title_level }} class="cms-block-media-title">{{ settings.title }}</{{ settings.title_level }}>
+    {% endif %}
+
     {% if (settings.media) %}
-        <div class="cms-media-container">
+        <div class="cms-block-media-container">
             {% media settings.media, settings.format %}
         </div>
     {% endif %}
-    <div class="content">
-        {{ settings.content|raw }}
-    </div>
+
+    {% if (settings.content|length) %}
+        <div class="cms-block-media-content">
+            {{ settings.content|raw }}
+        </div>
+    {% endif %}
 </div>
 {% endblock %}
