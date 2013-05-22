@@ -1,0 +1,41 @@
+block:
+    title:
+        presta_cms:
+            block:
+                media: Block Media
+                media_advanced: Block media avancé
+                gallery: Block gallerie
+                gallery_advanced: Block gallerie avancé
+                carousel: Block carrousel
+
+media:
+    format:
+        prestacms_page_wide: Large
+        prestacms_page_sidebar: Barre latérale
+        prestacms_page_content: Contenu
+        prestacms_gallery_full: Gallerie pleine page
+        prestacms_gallery_horizontal_thumb: Gallerie miniature horizontal
+        prestacms_gallery_vertical_thumb: Gallerie Miniature verticale
+        prestacms_carousel_full: Carrousel large
+        prestacms_carousel_medium: Carrousel moyen
+        prestacms_carousel_small: Carrousel petit
+
+    layout:
+        vertical: Alignement vertical
+        left: Aligné à gauche
+        right: Aligné à droite
+
+gallery:
+    layout:
+        vertical: Vertical
+        horizontal: Horizontal
+
+carousel:
+    format:
+        full: Large
+        medium: Moyen
+        small: Petit
+
+form:
+    label_format: Format
+    label_gallery: Gallerie
