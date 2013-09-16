@@ -14,7 +14,7 @@ services:
         arguments: [cms_core_editor, @templating,@service_container, @sonata.media.manager.media]
         calls:
             - [ setTranslator, [@translator] ]
-            - [ setContainer, [@service_container]]
+            - [ setAdminPool, [@sonata.admin.pool]]
     presta_cms.block.media:
         class: %presta_cms.block.media.class%
         tags:
@@ -23,7 +23,7 @@ services:
         arguments: [cms_core_editor, @templating,@service_container, @sonata.media.manager.media]
         calls:
             - [ setTranslator, [@translator] ]
-            - [ setContainer, [@service_container]]
+            - [ setAdminPool, [@sonata.admin.pool]]
     presta_cms.block.media_advanced:
         class: %presta_cms.block.media_advanced.class%
         tags:
@@ -32,7 +32,7 @@ services:
         arguments: [cms_core_editor, @templating,@service_container, @sonata.media.manager.media]
         calls:
             - [ setTranslator, [@translator] ]
-            - [ setContainer, [@service_container]]
+            - [ setAdminPool, [@sonata.admin.pool]]
     presta_cms.block.gallery:
         class: %presta_cms.block.gallery.class%
         tags:
@@ -41,7 +41,7 @@ services:
         arguments: [cms_core_editor, @templating,@service_container, @sonata.media.manager.media]
         calls:
             - [ setTranslator, [@translator] ]
-            - [ setContainer, [@service_container]]
+            - [ setAdminPool, [@sonata.admin.pool]]
     presta_cms.block.gallery_advanced:
         class: %presta_cms.block.gallery_advanced.class%
         tags:
@@ -50,4 +50,4 @@ services:
         arguments: [cms_core_editor, @templating,@service_container, @sonata.media.manager.media]
         calls:
             - [ setTranslator, [@translator] ]
-            - [ setContainer, [@service_container]]
+            - [ setAdminPool, [@sonata.admin.pool]]
