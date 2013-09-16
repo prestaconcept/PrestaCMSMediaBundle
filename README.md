@@ -1,5 +1,11 @@
-Presta CMS Media Bundle  [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSMediaBundle.png)](http://travis-ci.org/prestaconcept/PrestaCMSMediaBundle)
+Presta CMS Media Bundle
 =============
+
+ [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSMediaBundle.png)](http://travis-ci.org/prestaconcept/PrestaCMSMediaBundle)
+ [![Total Downloads](https://poser.pugx.org/presta/cms-media-bundle/downloads.png)](https://packagist.org/packages/presta/cms-media-bundle)
+ [![Latest Stable Version](https://poser.pugx.org/presta/cms-media-bundle/v/stable.png)](https://packagist.org/packages/presta/cms-media-bundle)
+
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/d4e48cf2-8182-4eae-a7aa-f2c370cffb55/big.png)](https://insight.sensiolabs.com/projects/d4e48cf2-8182-4eae-a7aa-f2c370cffb55)
 
 This bundle adds media blocks to [PrestaCMS][1].
 
