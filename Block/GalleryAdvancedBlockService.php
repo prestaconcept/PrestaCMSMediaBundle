@@ -1,8 +1,8 @@
 <?php
 /**
- * This file is part of the Presta Bundle project.
+ * This file is part of the PrestaCMSMediaBundle
  *
- * @author Nicolas Bastien <nbastien@prestaconcept.net>
+ * (c) PrestaConcept <www.prestaconcept.net>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -17,6 +17,8 @@ use Sonata\AdminBundle\Form\FormMapper;
  * Gallery Advanced Block use SonataMediaBundle
  *
  * Add a title, a content and the layout
+ *
+ * @author Nicolas Bastien <nbastien@prestaconcept.net>
  */
 class GalleryAdvancedBlockService extends GalleryBlockService
 {
