@@ -6,25 +6,28 @@
     {% set format = 'full'  %}
 
     {% if (settings.gallery) %}
-        <div id="{{ carouselId }}" class="carousel slide">
-            <ol class="carousel-indicators">
+        <div id="{{ carouselId }}" class="cms-block-carousel slide">
+            <ol class="cms-block-carousel-indicators">
                 {% for galleryHasMedias in gallery.galleryHasMedias %}
                     <li data-target="#{{ carouselId }}" data-slide-to="{{ loop.index0 }}" class="{% if(loop.first) %}active{% endif %}"></li>
                 {% endfor %}
             </ol>
-            <div class="carousel-inner">
+
+            <div class="cms-block-carousel-content">
             {% for galleryHasMedias in gallery.galleryHasMedias %}
                 {% set media = galleryHasMedias.media %}
+
                 <div class="{% if(loop.first) %}active{% endif %} item">
                     {% media media, 'carousel_' ~ format %}
-                        <div class="carousel-caption">
+                        <div class="cms-block-carousel-caption">
                             {{ media.description|raw }}
                         </div>
                 </div>
             {% endfor %}
             </div>
-            <a class="carousel-control left" href="#{{ carouselId }}" data-slide="prev">&lsaquo;</a>
-            <a class="carousel-control right" href="#{{ carouselId }}" data-slide="next">&rsaquo;</a>
+
+            <a class="cms-block-carousel-control left" href="#{{ carouselId }}" data-slide="prev">&lsaquo;</a>
+            <a class="cms-block-carousel-control right" href="#{{ carouselId }}" data-slide="next">&rsaquo;</a>
         </div>
     {% endif %}
 {% endblock %}
