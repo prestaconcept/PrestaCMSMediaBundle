@@ -23,5 +23,10 @@
     "autoload": {
         "psr-0": { "Presta\\CMSMediaBundle": "" }
     },
-    "target-dir": "Presta/CMSMediaBundle"
+    "target-dir": "Presta/CMSMediaBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
 }
