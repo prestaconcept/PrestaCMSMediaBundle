@@ -2,8 +2,8 @@
 
 {% block block %}
     {% if (settings.media) %}
-    <div class="cms-media-container">
-        {% media settings.media, settings.format %}
-    </div>
+        <div class="cms-block-media-container">
+            {% media settings.media, settings.format %}
+        </div>
     {% endif %}
 {% endblock %}

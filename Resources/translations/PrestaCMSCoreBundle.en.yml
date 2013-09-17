@@ -1,10 +1,12 @@
 block:
     title:
-        presta_cms.block.media: Block Media
-        presta_cms.block.media_advanced: Block Media Advanced
-        presta_cms.block.gallery: Block Gallery
-        presta_cms.block.gallery_advanced: Block Gallery Advanced
-        presta_cms.block.carousel: Carousel
+        presta_cms:
+            block:
+                media: Block Media
+                media_advanced: Block Media Advanced
+                gallery: Block Gallery
+                gallery_advanced: Block Gallery Advanced
+                carousel: Carousel
 
 media:
     format:

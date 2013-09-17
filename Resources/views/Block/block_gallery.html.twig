@@ -1,14 +1,15 @@
 {% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
 
 {% macro render_gallery(gallery, layout) %}
-<div class="cms-gallery-container {{ layout }}">
-    {% for galleryHasMedias in gallery.galleryHasMedias %}
-        {% set media = galleryHasMedias.media %}
-        <a class="cms-gallery-media" href="{% path media, 'gallery_full' %}" rel="{{ gallery.name|replace({'-': ''}) }}" title="{{ media.name }}">
-            {% media media, 'gallery_' ~ layout ~ '_thumb'  %}
-        </a>
-    {% endfor %}
-</div>
+    <div class="cms-block-gallery-container {{ layout }}">
+        {% for galleryHasMedias in gallery.galleryHasMedias %}
+            {% set media = galleryHasMedias.media %}
+
+            <a class="cms-block-gallery-media" href="{% path media, 'gallery_full' %}" rel="{{ gallery.name|replace({'-': ''}) }}" title="{{ media.name }}">
+                {% media media, 'gallery_' ~ layout ~ '_thumb'  %}
+            </a>
+        {% endfor %}
+    </div>
 {% endmacro %}
 {% import _self as prestacms %}
 
