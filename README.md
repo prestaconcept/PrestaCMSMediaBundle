@@ -122,3 +122,7 @@ If you want to make advanced rendering maybe the best way to do that is to build
 [4]: http://sonata-project.org/bundles/media/master/doc/reference/installation.html
 [5]: http://symfony.com/doc/2.0/book/templating.html#overriding-bundle-templates
 [6]: https://github.com/prestaconcept/PrestaCMSMediaBundle/blob/master/Resources/config/services.yml
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/prestaconcept/prestacmsmediabundle/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
