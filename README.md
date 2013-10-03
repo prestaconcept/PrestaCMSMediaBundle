@@ -55,3 +55,6 @@ Released under the MIT License
 [2]: http://sandbox.prestacms.fr/medias/media
 [3]: https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs
 [4]: http://prestaconcept.github.io/presta-cms-media/
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/prestaconcept/prestacmsmediabundle/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
