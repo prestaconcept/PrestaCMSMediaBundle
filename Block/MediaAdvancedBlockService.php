@@ -64,11 +64,12 @@ class MediaAdvancedBlockService extends MediaBlockService
     public function getDefaultSettings()
     {
         return array(
-            'media'  => null,
-            'format' => self::DEFAULT_MEDIA_FORMAT,
-            'layout' => self::DEFAULT_LAYOUT,
-            'title' => $this->trans('block.default.title'),
-            'content' => $this->trans('block.default.content'),
+            'media_alt' => null,
+            'media'     => null,
+            'format'    => self::DEFAULT_MEDIA_FORMAT,
+            'layout'    => self::DEFAULT_LAYOUT,
+            'title'     => $this->trans('block.default.title'),
+            'content'   => $this->trans('block.default.content'),
         );
     }
 }

@@ -73,6 +73,7 @@ class MediaBlockService extends BaseModelBlockService
 
         return array_merge(
             array(
+                array('media_alt', 'text', array('required' => false, 'label' => $this->trans('form.label_media_alt'))),
                 array('format', 'choice', array('required' => count($formatChoices) > 0, 'choices' => $formatChoices, 'label' => $this->trans('form.label_format')))
             ),
             parent::getFormSettings($formMapper, $block)
@@ -85,8 +86,9 @@ class MediaBlockService extends BaseModelBlockService
     public function getDefaultSettings()
     {
         return array(
-            'media'  => null,
-            'format' => self::DEFAULT_MEDIA_FORMAT
+            'media_alt' => null,
+            'media'     => null,
+            'format'    => self::DEFAULT_MEDIA_FORMAT
         );
     }
 }

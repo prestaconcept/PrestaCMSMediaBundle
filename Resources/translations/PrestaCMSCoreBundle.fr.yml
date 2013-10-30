@@ -39,3 +39,6 @@ carousel:
 form:
     label_format: Format
     label_gallery: Gallerie
+
+form.label_media: Média
+form.label_media_alt: Média alt
