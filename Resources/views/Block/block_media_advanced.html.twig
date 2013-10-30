@@ -8,7 +8,7 @@
 
     {% if (settings.media) %}
         <div class="cms-block-media-container">
-            {% media settings.media, settings.format %}
+            <img src="{% path settings.media, settings.format %}" alt="{{ settings.media_alt }}" />
         </div>
     {% endif %}
 
