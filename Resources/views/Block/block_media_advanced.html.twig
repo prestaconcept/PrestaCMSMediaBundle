@@ -14,7 +14,7 @@
 
     {% if (settings.content|length) %}
         <div class="cms-block-media-content">
-            {{ settings.content|raw }}
+            {{ settings.content|wysiwyg|raw }}
         </div>
     {% endif %}
 </div>

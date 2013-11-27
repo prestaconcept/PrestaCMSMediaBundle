@@ -12,7 +12,7 @@
 
         {% if (settings.content|length) %}
             <div class="cms-block-gallery-content">
-                {{ settings.content|raw }}
+                {{ settings.content|wysiwyg|raw }}
             </div>
         {% endif %}
     </div>

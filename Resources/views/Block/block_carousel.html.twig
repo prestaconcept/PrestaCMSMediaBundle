@@ -20,7 +20,7 @@
                 <div class="{% if(loop.first) %}active{% endif %} item">
                     {% media media, 'carousel_' ~ format %}
                         <div class="cms-block-carousel-caption">
-                            {{ media.description|raw }}
+                            {{ media.description|wysiwyg|raw }}
                         </div>
                 </div>
             {% endfor %}
