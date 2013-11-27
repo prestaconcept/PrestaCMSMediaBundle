@@ -22,8 +22,6 @@
                 <source>block.title.presta_cms.block.carousel</source>
                 <target>Carousel</target>
             </trans-unit>
-
-
             <trans-unit id="media.format.prestacms_page_wide">
                 <source>media.format.prestacms_page_wide</source>
                 <target>wide</target>
@@ -60,8 +58,6 @@
                 <source>media.format.prestacms_carousel_small</source>
                 <target>carousel small</target>
             </trans-unit>
-
-
             <trans-unit id="media.layout.vertical">
                 <source>media.layout.vertical</source>
                 <target>vertical</target>
@@ -74,8 +70,6 @@
                 <source>media.layout.right</source>
                 <target>align right</target>
             </trans-unit>
-
-
             <trans-unit id="gallery.layout.vertical">
                 <source>gallery.layout.vertical</source>
                 <target>vertical</target>
@@ -84,8 +78,6 @@
                 <source>gallery.layout.horizontal</source>
                 <target>horizontal</target>
             </trans-unit>
-
-
             <trans-unit id="carousel.format.full">
                 <source>carousel.format.full</source>
                 <target>full</target>
@@ -98,8 +90,6 @@
                 <source>carousel.format.small</source>
                 <target>small</target>
             </trans-unit>
-
-
             <trans-unit id="form.label_format">
                 <source>form.label_format</source>
                 <target>Format</target>
@@ -108,8 +98,6 @@
                 <source>form.label_gallery</source>
                 <target>Gallery</target>
             </trans-unit>
-
-
             <trans-unit id="form.label_media">
                 <source>form.label_media</source>
                 <target>Media</target>
