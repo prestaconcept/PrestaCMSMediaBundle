@@ -51,8 +51,20 @@ class MediaAdvancedBlockService extends MediaBlockService
         return array_merge(
             array(
                 array('title', 'text', array('required' => false, 'label' => $this->trans('form.label_title'))),
-                array('content', 'textarea', array('attr' => array('class' => 'wysiwyg'), 'label' => $this->trans('form.label_content'))),
-                array('layout', 'choice', array('required' => true, 'choices' => $this->getLayouts(), 'label' => $this->trans('form.label_layout')))
+                array(
+                    'content',
+                    'textarea',
+                    array('attr' => array('class' => 'wysiwyg'), 'label' => $this->trans('form.label_content'))
+                ),
+                array(
+                    'layout',
+                    'choice',
+                    array(
+                        'required' => true,
+                        'choices'  => $this->getLayouts(),
+                        'label'    => $this->trans('form.label_layout')
+                    )
+                )
             ),
             parent::getFormSettings($formMapper, $block)
         );
