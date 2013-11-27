@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="presta_cms.block.carousel.class">Presta\CMSMediaBundle\Block\CarouselBlockService</parameter>
+        <parameter key="presta_cms.block.media.class">Presta\CMSMediaBundle\Block\MediaBlockService</parameter>
+        <parameter key="presta_cms.block.media_advanced.class">Presta\CMSMediaBundle\Block\MediaAdvancedBlockService</parameter>
+        <parameter key="presta_cms.block.gallery.class">Presta\CMSMediaBundle\Block\GalleryBlockService</parameter>
+        <parameter key="presta_cms.block.gallery_advanced.class">Presta\CMSMediaBundle\Block\GalleryAdvancedBlockService</parameter>
+    </parameters>
+
+    <services>
+        <service id="presta_cms.block.carousel" class="%presta_cms.block.carousel.class%" parent="presta_cms.block.base">
+            <tag name="sonata.block"/>
+            <tag name="presta_cms.block"/>
+
+            <call method="setAdminPool">
+                <argument type="service" id="sonata.admin.pool" />
+            </call>
+        </service>
+        <service id="presta_cms.block.media" class="%presta_cms.block.media.class%" parent="presta_cms.block.base">
+            <tag name="sonata.block"/>
+            <tag name="presta_cms.block"/>
+
+            <call method="setAdminPool">
+                <argument type="service" id="sonata.admin.pool" />
+            </call>
+        </service>
+        <service id="presta_cms.block.media_advanced" class="%presta_cms.block.media_advanced.class%" parent="presta_cms.block.base">
+            <tag name="sonata.block"/>
+            <tag name="presta_cms.block"/>
+
+            <call method="setAdminPool">
+                <argument type="service" id="sonata.admin.pool" />
+            </call>
+        </service>
+        <service id="presta_cms.block.gallery" class="%presta_cms.block.gallery.class%" parent="presta_cms.block.base">
+            <tag name="sonata.block"/>
+            <tag name="presta_cms.block"/>
+
+            <call method="setAdminPool">
+                <argument type="service" id="sonata.admin.pool" />
+            </call>
+        </service>
+        <service id="presta_cms.block.gallery_advanced" class="%presta_cms.block.gallery_advanced.class%" parent="presta_cms.block.base">
+            <tag name="sonata.block"/>
+            <tag name="presta_cms.block"/>
+
+            <call method="setAdminPool">
+                <argument type="service" id="sonata.admin.pool" />
+            </call>
+        </service>
+    </services>
+</container>
