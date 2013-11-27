@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="block.title.presta_cms.block.media">
+                <source>block.title.presta_cms.block.media</source>
+                <target>Block Media</target>
+            </trans-unit>
+            <trans-unit id="block.title.presta_cms.block.media_advanced">
+                <source>block.title.presta_cms.block.media_advanced</source>
+                <target>Block Media Advanced</target>
+            </trans-unit>
+            <trans-unit id="block.title.presta_cms.block.gallery">
+                <source>block.title.presta_cms.block.gallery</source>
+                <target>Block Gallery</target>
+            </trans-unit>
+            <trans-unit id="block.title.presta_cms.block.gallery_advanced">
+                <source>block.title.presta_cms.block.gallery_advanced</source>
+                <target>Block Gallery Advanced</target>
+            </trans-unit>
+            <trans-unit id="block.title.presta_cms.block.carousel">
+                <source>block.title.presta_cms.block.carousel</source>
+                <target>Carousel</target>
+            </trans-unit>
+
+
+            <trans-unit id="media.format.prestacms_page_wide">
+                <source>media.format.prestacms_page_wide</source>
+                <target>wide</target>
+            </trans-unit>
+            <trans-unit id="media.format.prestacms_page_sidebar">
+                <source>media.format.prestacms_page_sidebar</source>
+                <target>sidebar</target>
+            </trans-unit>
+            <trans-unit id="media.format.prestacms_page_content">
+                <source>media.format.prestacms_page_content</source>
+                <target>content</target>
+            </trans-unit>
+            <trans-unit id="media.format.prestacms_gallery_full">
+                <source>media.format.prestacms_gallery_full</source>
+                <target>gallery full</target>
+            </trans-unit>
+            <trans-unit id="media.format.prestacms_gallery_horizontal_thumb">
+                <source>media.format.prestacms_gallery_horizontal_thumb</source>
+                <target>gallery horizontal thumb</target>
+            </trans-unit>
+            <trans-unit id="media.format.prestacms_gallery_vertical_thumb">
+                <source>media.format.prestacms_gallery_vertical_thumb</source>
+                <target>gallery vertical thumb</target>
+            </trans-unit>
+            <trans-unit id="media.format.prestacms_carousel_full">
+                <source>media.format.prestacms_carousel_full</source>
+                <target>carousel full</target>
+            </trans-unit>
+            <trans-unit id="media.format.prestacms_carousel_medium">
+                <source>media.format.prestacms_carousel_medium</source>
+                <target>carousel medium</target>
+            </trans-unit>
+            <trans-unit id="media.format.prestacms_carousel_small">
+                <source>media.format.prestacms_carousel_small</source>
+                <target>carousel small</target>
+            </trans-unit>
+
+
+            <trans-unit id="media.layout.vertical">
+                <source>media.layout.vertical</source>
+                <target>vertical</target>
+            </trans-unit>
+            <trans-unit id="media.layout.left">
+                <source>media.layout.left</source>
+                <target>align left</target>
+            </trans-unit>
+            <trans-unit id="media.layout.right">
+                <source>media.layout.right</source>
+                <target>align right</target>
+            </trans-unit>
+
+
+            <trans-unit id="gallery.layout.vertical">
+                <source>gallery.layout.vertical</source>
+                <target>vertical</target>
+            </trans-unit>
+            <trans-unit id="gallery.layout.horizontal">
+                <source>gallery.layout.horizontal</source>
+                <target>horizontal</target>
+            </trans-unit>
+
+
+            <trans-unit id="carousel.format.full">
+                <source>carousel.format.full</source>
+                <target>full</target>
+            </trans-unit>
+            <trans-unit id="carousel.format.medium">
+                <source>carousel.format.medium</source>
+                <target>medium</target>
+            </trans-unit>
+            <trans-unit id="carousel.format.small">
+                <source>carousel.format.small</source>
+                <target>small</target>
+            </trans-unit>
+
+
+            <trans-unit id="form.label_format">
+                <source>form.label_format</source>
+                <target>Format</target>
+            </trans-unit>
+            <trans-unit id="form.label_gallery">
+                <source>form.label_gallery</source>
+                <target>Gallery</target>
+            </trans-unit>
+
+
+            <trans-unit id="form.label_media">
+                <source>form.label_media</source>
+                <target>Media</target>
+            </trans-unit>
+            <trans-unit id="form.label_media_alt">
+                <source>form.label_media_alt</source>
+                <target>Media alt</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
