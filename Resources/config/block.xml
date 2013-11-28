@@ -13,45 +13,25 @@
     </parameters>
 
     <services>
-        <service id="presta_cms.block.carousel" class="%presta_cms.block.carousel.class%" parent="presta_cms.block.base">
+        <service id="presta_cms.block.carousel" class="%presta_cms.block.carousel.class%" parent="presta_cms.block.model.base">
             <tag name="sonata.block"/>
             <tag name="presta_cms.block"/>
-
-            <call method="setAdminPool">
-                <argument type="service" id="sonata.admin.pool" />
-            </call>
         </service>
-        <service id="presta_cms.block.media" class="%presta_cms.block.media.class%" parent="presta_cms.block.base">
+        <service id="presta_cms.block.media" class="%presta_cms.block.media.class%" parent="presta_cms.block.model.base">
             <tag name="sonata.block"/>
             <tag name="presta_cms.block"/>
-
-            <call method="setAdminPool">
-                <argument type="service" id="sonata.admin.pool" />
-            </call>
         </service>
-        <service id="presta_cms.block.media_advanced" class="%presta_cms.block.media_advanced.class%" parent="presta_cms.block.base">
+        <service id="presta_cms.block.media_advanced" class="%presta_cms.block.media_advanced.class%" parent="presta_cms.block.model.base">
             <tag name="sonata.block"/>
             <tag name="presta_cms.block"/>
-
-            <call method="setAdminPool">
-                <argument type="service" id="sonata.admin.pool" />
-            </call>
         </service>
-        <service id="presta_cms.block.gallery" class="%presta_cms.block.gallery.class%" parent="presta_cms.block.base">
+        <service id="presta_cms.block.gallery" class="%presta_cms.block.gallery.class%" parent="presta_cms.block.model.base">
             <tag name="sonata.block"/>
             <tag name="presta_cms.block"/>
-
-            <call method="setAdminPool">
-                <argument type="service" id="sonata.admin.pool" />
-            </call>
         </service>
-        <service id="presta_cms.block.gallery_advanced" class="%presta_cms.block.gallery_advanced.class%" parent="presta_cms.block.base">
+        <service id="presta_cms.block.gallery_advanced" class="%presta_cms.block.gallery_advanced.class%" parent="presta_cms.block.model.base">
             <tag name="sonata.block"/>
             <tag name="presta_cms.block"/>
-
-            <call method="setAdminPool">
-                <argument type="service" id="sonata.admin.pool" />
-            </call>
         </service>
     </services>
 </container>
