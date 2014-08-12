@@ -10,7 +10,7 @@
         <field name="hook" column="hook" type="text" nullable="true" />
         <field name="linkUrl" column="link_url" type="string" length="200" nullable="true" />
         <field name="linkLabel" column="link_label" type="string" length="200" nullable="true" />
-        <field name="rank" column="rank" type="integer" nullable="false" />
+        <field name="position" column="position" type="integer" nullable="false" />
         <field name="enabled" column="enabled" type="boolean" nullable="false" />
 
     </mapped-superclass>

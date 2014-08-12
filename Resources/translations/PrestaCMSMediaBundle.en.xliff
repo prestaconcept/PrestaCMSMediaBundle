@@ -14,9 +14,9 @@
                 <source>form.label.hook</source>
                 <target>Hook</target>
             </trans-unit>
-            <trans-unit id="form.label.banner">
-                <source>form.label.banner</source>
-                <target>Banner</target>
+            <trans-unit id="form.label.media">
+                <source>form.label.media</source>
+                <target>Media</target>
             </trans-unit>
             <trans-unit id="form.label.link_url">
                 <source>form.label.link_url</source>
@@ -26,8 +26,8 @@
                 <source>form.label.link_label</source>
                 <target>Link label</target>
             </trans-unit>
-            <trans-unit id="form.label.rank">
-                <source>form.label.rank</source>
+            <trans-unit id="form.label.position">
+                <source>form.label.position</source>
                 <target>Order</target>
             </trans-unit>
             <trans-unit id="form.label.enabled">

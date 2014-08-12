@@ -19,8 +19,8 @@
             <div class="cms-block-carousel-content">
                 {% for carousel in carouselItems %}
                     <div class="{% if(loop.first) %}active{% endif %} item">
-                        {% if carousel.banner is defined %}
-                            {%-media carousel.banner, 'carousel_' ~ format-%}
+                        {% if carousel.media is defined %}
+                            {%-media carousel.media, 'carousel_' ~ format-%}
                         {% endif %}
                         <div class="cms-block-carousel-caption">
                             {% if carousel.title is defined %}

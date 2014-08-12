@@ -10,7 +10,7 @@
             <generator strategy="AUTO"/>
         </id>
 
-        <many-to-one field="banner" target-entity="Application\Sonata\MediaBundle\Entity\Media">
+        <many-to-one field="media" target-entity="Application\Sonata\MediaBundle\Entity\Media">
         </many-to-one>
 
     </entity>

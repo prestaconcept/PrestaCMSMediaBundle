@@ -1,9 +1,13 @@
 <?php
 /**
- * This file is part of the Bpeek website
+ * This file is part of the PrestaCMSMediaBundle
  *
- * Developed by PrestaConcept <http://www.prestaconcept.net>
+ * (c) PrestaConcept <www.prestaconcept.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
+
 namespace Presta\CMSMediaBundle\Model\Carousel;
 
 use Doctrine\ORM\EntityRepository;
@@ -23,7 +27,7 @@ class Repository extends EntityRepository
     {
         $queryBuilder = $this->createQueryBuilder('c')
             ->where('c.enabled = :enabled')
-            ->orderBy('c.rank')
+            ->orderBy('c.position')
             ->setParameters(array(
                 'enabled' => true,
             ));

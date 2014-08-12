@@ -33,9 +33,9 @@ abstract class Carousel
     protected $hook;
 
     /**
-     * @var Media $banner
+     * @var Media $media
      */
-    protected $banner;
+    protected $media;
 
     /**
      * @var string $linkUrl
@@ -48,9 +48,9 @@ abstract class Carousel
     protected $linkLabel;
 
     /**
-     * @var integer $rank
+     * @var integer $position
      */
-    protected $rank;
+    protected $position;
 
     /**
      * @var boolean $enabled
@@ -170,49 +170,49 @@ abstract class Carousel
     }
 
     /**
-     * Set banner
+     * Set media
      *
-     * @param Media $banner
+     * @param Media $media
      * @return Carousel
      */
-    public function setBanner(Media $banner = null)
+    public function setMedia(Media $media = null)
     {
-        $this->banner = $banner;
+        $this->media = $media;
 
         return $this;
     }
 
     /**
-     * Get banner
+     * Get media
      *
      * @return Media
      */
-    public function getBanner()
+    public function getMedia()
     {
-        return $this->banner;
+        return $this->media;
     }
 
     /**
-     * Set rank
+     * Set position
      *
-     * @param integer $rank
+     * @param integer $position
      * @return Carousel
      */
-    public function setRank($rank)
+    public function setPosition($position)
     {
-        $this->rank = $rank;
+        $this->position = $position;
 
         return $this;
     }
 
     /**
-     * Get rank
+     * Get position
      *
      * @return integer
      */
-    public function getRank()
+    public function getPosition()
     {
-        return $this->rank;
+        return $this->position;
     }
 
     /**

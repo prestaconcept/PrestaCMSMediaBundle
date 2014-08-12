@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is part of the PrestaCMSContactBundle
+ * This file is part of the PrestaCMSMediaBundle
  *
  * (c) PrestaConcept <www.prestaconcept.net>
  *

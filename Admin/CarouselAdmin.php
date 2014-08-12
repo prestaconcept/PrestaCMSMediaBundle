@@ -33,7 +33,7 @@ class CarouselAdmin extends Admin
     {
         $listMapper
             ->addIdentifier('title', null, array('label' => 'form.label.title'))
-            ->add('rank', null, array('label' => 'form.label.rank'))
+            ->add('position', null, array('label' => 'form.label.position'))
             ->add('enabled', null, array('label' => 'form.label.enabled'))
             ->add(
                 '_action',
@@ -65,11 +65,11 @@ class CarouselAdmin extends Admin
                     'label' => 'form.label.hook'
                 ))
                 ->add(
-                    'banner',
+                    'media',
                     'sonata_type_model_list',
                     array(
                         'required' => true,
-                        'label' => 'form.label.banner'
+                        'label' => 'form.label.media'
                     ),
                     array('link_parameters' => array('context' => 'prestacms'))
                 )
@@ -83,10 +83,10 @@ class CarouselAdmin extends Admin
                     'attr' => array('class' => 'sonata-medium'),
                     'label' => 'form.label.link_label'
                 ))
-                ->add('rank', 'integer', array(
+                ->add('position', 'integer', array(
                     'required' => true,
                     'attr' => array('class' => 'sonata-medium'),
-                    'label' => 'form.label.rank'
+                    'label' => 'form.label.position'
                 ))
                 ->add('enabled', null, array(
                     'required' => false,
