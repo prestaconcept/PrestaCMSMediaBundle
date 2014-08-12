@@ -58,8 +58,6 @@ abstract class Carousel
     protected $enabled = true;
 
     /**
-     * Return object string description
-     *
      * @return string
      */
     public function __toString()
@@ -68,8 +66,6 @@ abstract class Carousel
     }
 
     /**
-     * Get id
-     *
      * @return integer
      */
     public function getId()
@@ -78,8 +74,6 @@ abstract class Carousel
     }
 
     /**
-     * Set title
-     *
      * @param string $title
      * @return Carousel
      */
@@ -91,8 +85,6 @@ abstract class Carousel
     }
 
     /**
-     * Get title
-     *
      * @return string
      */
     public function getTitle()
@@ -101,8 +93,6 @@ abstract class Carousel
     }
 
     /**
-     * Set hook
-     *
      * @param string $hook
      * @return Carousel
      */
@@ -114,8 +104,6 @@ abstract class Carousel
     }
 
     /**
-     * Get hook
-     *
      * @return string
      */
     public function getHook()
@@ -124,8 +112,6 @@ abstract class Carousel
     }
 
     /**
-     * Set linkUrl
-     *
      * @param string $linkUrl
      * @return Carousel
      */
@@ -137,8 +123,6 @@ abstract class Carousel
     }
 
     /**
-     * Get linkUrl
-     *
      * @return string
      */
     public function getLinkUrl()
@@ -147,8 +131,6 @@ abstract class Carousel
     }
 
     /**
-     * Set linkLabel
-     *
      * @param string $linkLabel
      * @return Carousel
      */
@@ -160,8 +142,6 @@ abstract class Carousel
     }
 
     /**
-     * Get linkLabel
-     *
      * @return string
      */
     public function getLinkLabel()
@@ -170,8 +150,6 @@ abstract class Carousel
     }
 
     /**
-     * Set media
-     *
      * @param Media $media
      * @return Carousel
      */
@@ -183,8 +161,6 @@ abstract class Carousel
     }
 
     /**
-     * Get media
-     *
      * @return Media
      */
     public function getMedia()
@@ -206,8 +182,6 @@ abstract class Carousel
     }
 
     /**
-     * Get position
-     *
      * @return integer
      */
     public function getPosition()
@@ -216,8 +190,6 @@ abstract class Carousel
     }
 
     /**
-     * Set enabled
-     *
      * @param boolean $enabled
      * @return Carousel
      */
@@ -229,11 +201,9 @@ abstract class Carousel
     }
 
     /**
-     * Get enabled
-     *
      * @return boolean
      */
-    public function getEnabled()
+    public function isEnabled()
     {
         return $this->enabled;
     }
