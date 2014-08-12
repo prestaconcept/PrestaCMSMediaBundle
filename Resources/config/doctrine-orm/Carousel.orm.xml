@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+    https://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd">
+
+    <entity name="Presta\CMSMediaBundle\Doctrine\Orm\Carousel" table="presta_cms_media_carousel" repository-class="Presta\CMSMediaBundle\Model\Carousel\Repository">
+
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+
+        <many-to-one field="media" target-entity="Application\Sonata\MediaBundle\Entity\Media">
+        </many-to-one>
+
+    </entity>
+
+</doctrine-mapping>

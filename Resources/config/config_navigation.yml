@@ -1,0 +1,8 @@
+
+presta_sonata_navigation:
+    menu:
+        items:
+            cms:
+                children:
+                    carousel:
+                        route: admin_presta_cmsmedia_carousel_list

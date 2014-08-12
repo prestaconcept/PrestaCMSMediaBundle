@@ -22,6 +22,10 @@
                 <source>block.title.presta_cms.block.carousel</source>
                 <target>Carousel</target>
             </trans-unit>
+            <trans-unit id="block.title.presta_cms.block.carousel_advanced">
+                <source>block.title.presta_cms.block.carousel_advanced</source>
+                <target>Block Carousel Advanced</target>
+            </trans-unit>
             <trans-unit id="media.format.prestacms_page_wide">
                 <source>media.format.prestacms_page_wide</source>
                 <target>wide</target>

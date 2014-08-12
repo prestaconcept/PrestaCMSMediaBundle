@@ -6,6 +6,7 @@
 
     <parameters>
         <parameter key="presta_cms.block.carousel.class">Presta\CMSMediaBundle\Block\CarouselBlockService</parameter>
+        <parameter key="presta_cms.block.carousel_advanced.class">Presta\CMSMediaBundle\Block\CarouselAdvancedBlockService</parameter>
         <parameter key="presta_cms.block.media.class">Presta\CMSMediaBundle\Block\MediaBlockService</parameter>
         <parameter key="presta_cms.block.media_advanced.class">Presta\CMSMediaBundle\Block\MediaAdvancedBlockService</parameter>
         <parameter key="presta_cms.block.gallery.class">Presta\CMSMediaBundle\Block\GalleryBlockService</parameter>
@@ -16,6 +17,13 @@
         <service id="presta_cms.block.carousel" class="%presta_cms.block.carousel.class%" parent="presta_cms.block.model.base">
             <tag name="sonata.block"/>
             <tag name="presta_cms.block"/>
+        </service>
+        <service id="presta_cms.block.carousel_advanced" class="%presta_cms.block.carousel_advanced.class%" parent="presta_cms.block.base">
+            <tag name="sonata.block" />
+            <tag name="presta_cms.block" />
+            <call method="setContainer">
+                <argument type="service" id="service_container" />
+            </call>
         </service>
         <service id="presta_cms.block.media" class="%presta_cms.block.media.class%" parent="presta_cms.block.model.base">
             <tag name="sonata.block"/>
