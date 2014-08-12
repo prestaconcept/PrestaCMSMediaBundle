@@ -7,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Presta\CMSMediaBundle\Admin;
 
 use Sonata\AdminBundle\Form\FormMapper;
