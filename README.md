@@ -20,6 +20,7 @@ This bundles adds the following block type to your project :
 -   Gallery Simple
 -   Gallery Advanced
 -   Carousel
+-   Carousel Advanced
 
 ## Issue tracker ##
 

@@ -1,0 +1,44 @@
+{% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
+
+{% block block %}
+    {% set carouselId = 'cms-carousel-' ~ block.htmlId %}
+    {% set format = 'full'  %}
+
+    {% if (carouselItems) %}
+        <div id="{{ carouselId }}" class="cms-block-carousel slide">
+            {% if (settings.title|length) %}
+                <{{ settings.title_level }} class="cms-block-title">{{ settings.title | raw }}</{{ settings.title_level }}>
+            {% endif %}
+
+            <ol class="cms-block-carousel-indicators">
+                {% for carousel in carouselItems %}
+                    <li data-target="#{{ carouselId }}" data-slide-to="{{ loop.index0 }}" class="{% if(loop.first) %}active{% endif %}"></li>
+                {% endfor %}
+            </ol>
+
+            <div class="cms-block-carousel-content">
+                {% for carousel in carouselItems %}
+                    <div class="{% if(loop.first) %}active{% endif %} item">
+                        {% if carousel.banner is defined %}
+                            {%-media carousel.banner, 'carousel_' ~ format-%}
+                        {% endif %}
+                        <div class="cms-block-carousel-caption">
+                            {% if carousel.title is defined %}
+                                <div class="cms-block-carousel-title">{{ carousel.title|raw }}</div>
+                            {% endif %}
+                            {% if carousel.hook is defined %}
+                                <div class="cms-block-carousel-hook">{{ carousel.hook|raw }}</div>
+                            {% endif %}
+                            {% if carousel.linkUrl is defined and carousel.linkLabel is defined %}
+                                <a href="{{ carousel.linkUrl }}" target="_blank" class="link more">{{ carousel.linkLabel|raw }}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <a class="cms-block-carousel-control left" href="#{{ carouselId }}" data-slide="prev">&lsaquo;</a>
+            <a class="cms-block-carousel-control right" href="#{{ carouselId }}" data-slide="next">&rsaquo;</a>
+        </div>
+    {% endif %}
+{% endblock %}

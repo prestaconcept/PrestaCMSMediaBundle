@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="CmfMenuBundle.en.xliff">
+        <body>
+            <trans-unit id="admin.form.fieldset.general">
+                <source>admin.form.fieldset.general</source>
+                <target>General</target>
+            </trans-unit>
+            <trans-unit id="form.label.title">
+                <source>form.label.title</source>
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="form.label.hook">
+                <source>form.label.hook</source>
+                <target>Hook</target>
+            </trans-unit>
+            <trans-unit id="form.label.banner">
+                <source>form.label.banner</source>
+                <target>Banner</target>
+            </trans-unit>
+            <trans-unit id="form.label.link_url">
+                <source>form.label.link_url</source>
+                <target>Link URL</target>
+            </trans-unit>
+            <trans-unit id="form.label.link_label">
+                <source>form.label.link_label</source>
+                <target>Link label</target>
+            </trans-unit>
+            <trans-unit id="form.label.rank">
+                <source>form.label.rank</source>
+                <target>Order</target>
+            </trans-unit>
+            <trans-unit id="form.label.enabled">
+                <source>form.label.enabled</source>
+                <target>Enabled</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

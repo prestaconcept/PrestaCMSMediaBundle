@@ -27,11 +27,20 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $treeBuilder->root('presta_cms_media');
-
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $treeBuilder->root('presta_cms_media')
+            ->children()
+                ->arrayNode('persistence')
+                ->addDefaultsIfNotSet()
+                ->children()
+                    ->arrayNode('orm')
+                        ->addDefaultsIfNotSet()
+                        ->children()
+                            ->booleanNode('enabled')->defaultFalse()->end()
+                            ->scalarNode('manager_name')->defaultNull()->end()
+                        ->end()
+                    ->end()
+                ->end()
+            ->end();
 
         return $treeBuilder;
     }

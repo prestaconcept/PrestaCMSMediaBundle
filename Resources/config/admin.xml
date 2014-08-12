@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="presta_cms.admin.carousel.class">Presta\CMSMediaBundle\Admin\CarouselAdmin</parameter>
+        <parameter key="presta_cms.model.carousel.class">Presta\CMSMediaBundle\Doctrine\Orm\Carousel</parameter>
+    </parameters>
+
+    <services>
+        <service id="presta_cms.admin.carousel" class="%presta_cms.admin.carousel.class%">
+            <tag name="sonata.admin" manager_type="orm" group="presta_cms" label_catalogue="PrestaCMSMediaBundle" label="title.carousel"/>
+            <argument/>
+            <argument>%presta_cms.model.carousel.class%</argument>
+            <argument />
+        </service>
+    </services>
+
+</container>

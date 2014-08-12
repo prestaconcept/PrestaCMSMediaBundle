@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="PrestaCMSFAQBundle.en.xliff">
+        <body>
+            <trans-unit id="navigation.cms.carousel.label">
+                <source>navigation.cms.carousel.label</source>
+                <target>Carrousel</target>
+            </trans-unit>
+            <trans-unit id="navigation.cms.carousel.description">
+                <source>navigation.cms.carousel.description</source>
+                <target>Gestion du carrousel</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
